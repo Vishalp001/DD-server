@@ -19,6 +19,7 @@ app.use(cors());
 
 // Enable CORS for a specific origin
 app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
   res.header(
     'Access-Control-Allow-Origin',
     'https://e-commerce-store-2a892.web.app'
