@@ -22,8 +22,8 @@ router.post('/', async (req, res) => {
     payment_method_types: ['card'],
     line_items: lineItems,
     mode: 'payment',
-    success_url: 'http://localhost:3000/success',
-    cancel_url: 'http://localhost:3000/cancel',
+    success_url: 'https://e-commerce-store-2a892.web.app/success',
+    cancel_url: 'https://e-commerce-store-2a892.web.app/cancel',
   });
   const response = res.json({id: session.id});
   console.log(response, 'response');
